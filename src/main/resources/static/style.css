@@ -1,0 +1,156 @@
+
+:root {
+    --primary: #4f46e5;
+    --primary-light: #eef2ff;
+    --dark: #1e293b;
+    --muted: #64748b;
+    --background: #f8fafc;
+    --border: #e2e8f0;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--background);
+    color: var(--dark);
+}
+
+.sidebar {
+    background: #172033;
+    color: white;
+    min-height: 100vh;
+    padding: 28px 18px;
+}
+
+.sidebar h4 {
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.sidebar a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: var(--primary);
+    color: white;
+}
+
+.main-content {
+    padding: 30px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.topbar h2 {
+    font-weight: 700;
+    margin: 0;
+}
+
+.stat-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 22px;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+.stat-card p {
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+
+.stat-card h3 {
+    font-weight: 700;
+    margin: 0;
+}
+
+.employee-section {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 28px;
+}
+
+.employee-section h4 {
+    font-weight: 700;
+}
+
+.table th {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background: #4338ca;
+    border-color: #4338ca;
+}
+
+.search-input {
+    max-width: 280px;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 14px;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+        padding: 15px;
+    }
+
+    .sidebar h4 {
+        margin-bottom: 15px;
+    }
+
+    .main-content {
+        padding: 18px;
+    }
+
+    .topbar {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .search-input {
+        max-width: 100%;
+    }
+}
